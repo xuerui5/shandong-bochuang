@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术支持 - 山东博创新型建材科技有限公司</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0066cc',
+                        secondary: '#004d99',
+                        accent: '#ff6600',
+                        light: '#f5f5f5',
+                        dark: '#333333',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+            .transition-all-300 {
+                transition: all 300ms ease-in-out;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-dark bg-light">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-lg sm:text-xl md:text-2xl font-bold text-primary">
+                        山东博创新型建材科技有限公司
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-primary transition-all-300">首页</a>
+                    <a href="about.html" class="hover:text-primary transition-all-300">关于我们</a>
+                    <a href="products.html" class="hover:text-primary transition-all-300">产品中心</a>
+                    <a href="support.html" class="text-primary font-medium hover:text-secondary transition-all-300">技术支持</a>
+                    <a href="contact.html" class="hover:text-primary transition-all-300">联系我们</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-dark focus:outline-none">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- 移动端菜单 -->
+            <div id="mobile-menu" class="md:hidden hidden pt-4 pb-2">
+                <a href="index.html" class="block py-2 hover:text-primary">首页</a>
+                <a href="about.html" class="block py-2 hover:text-primary">关于我们</a>
+                <a href="products.html" class="block py-2 hover:text-primary">产品中心</a>
+                <a href="support.html" class="block py-2 text-primary font-medium">技术支持</a>
+                <a href="contact.html" class="block py-2 hover:text-primary">联系我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 面包屑导航 -->
+    <div class="pt-24 pb-4 bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="index.html" class="text-gray-700 hover:text-primary transition-all-300">
+                            <i class="fa fa-home mr-2"></i>首页
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fa fa-chevron-right text-gray-400 mx-2"></i>
+                            <span class="text-primary font-medium">技术支持</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 磁盒使用及保养 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">磁盒使用及保养</h2>
+            <div class="bg-light p-8 rounded-lg shadow-md">
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    <strong>（新型）磁性模板固定器是专为固定预制混凝土模板而开发的磁性固定装置，相对于传统的螺丝、压铁等固定方式，磁盒固定具有操作简单、使用方便、吸力强劲等特点，在生产中极大的提高工人的工作效率，大大减轻了工人的劳动强度，在国内外PC混凝土构件流水线上得到广泛的应用，在国内大力推进装配式建筑发展方兴未艾之时，成为越来越多的PC构件厂必备的模板固定装置。</strong>
+                </p>
+                
+                <h3 class="text-2xl font-semibold mb-6 text-primary">使用方法</h3>
+                <ol class="list-decimal list-inside space-y-4 text-gray-600 mb-8">
+                    <li class="pl-4">
+                        磁盒上面有一个开关压头，把磁盒置于平台上，按下压头（严禁铁锤、铁器敲击）建议用橡胶锤，磁盒牢牢吸住模台，处于工作状态，然后调整前端压紧螺丝，压住模板即可，不建议用电动扳手。
+                    </li>
+                    <li class="pl-4">
+                        磁盒处于工作状态，不可用手直接扳动，否则容易造成手部划伤，使用专用的撬棍撬起压头开关，磁盒与平台吸力大大减少，磁芯处于关闭状态，可以搬动磁盒。
+                    </li>
+                    <li class="pl-4">
+                        平台厚度、表面平整度，有无杂质等将会影响磁盒的吸力，平台越厚，表面平整、干净则吸力越大。
+                    </li>
+                    <li class="pl-4">
+                        磁盒两端有两个调整螺丝，可以连接不固的夹具以固定不同形状结构的边模。
+                    </li>
+                    <li class="pl-4">
+                        本磁盒使用的是永久强磁，使用环境温度不大于80℃。
+                    </li>
+                </ol>
+                
+                <div class="mb-8">
+                    <img src="磁盒使用方法 .png" alt="磁盒使用方法" class="w-full rounded-lg shadow-md">
+                </div>
+                
+                <h3 class="text-2xl font-semibold mb-6 text-primary">维修保养</h3>
+                <ol class="list-decimal list-inside space-y-4 text-gray-600 mb-8">
+                    <li class="pl-4">
+                        磁盒在使用过程中，应防止用铁质工具敲击，暴力使用造成外壳变形、开关损坏、上下不灵、甚至损坏磁铁，以免影响磁铁使用性能（建议使用橡胶榔头）。
+                    </li>
+                    <li class="pl-4">
+                        磁盒使用平台应保持清洁平整，无水泥、沙子、铁丝等异物，保证磁盒吸力正常使用。
+                    </li>
+                    <li class="pl-4">
+                        磁盒吸力非常强，应避免靠近精密仪器、电子表等易受磁力影响的器件，同时也不要靠近其他铁质材料，一旦被吸住，难以分离，建议制作专用的工具箱、架（车）放置磁盒及磁性固定器。
+                    </li>
+                    <li class="pl-4">
+                        应始终保持磁盒吸持面的清洁与平整，严禁铁丝、铁屑等杂质吸附上面，做到及时清理，长时间不用磁芯面应上油防锈。
+                    </li>
+                    <li class="pl-4">
+                        磁盒两端的调整螺丝，应时刻保持上下调整、灵活、上油、落在上面的水泥及时清理，调整螺栓时不能用电动扳手，建议手动扳手微调。
+                    </li>
+                </ol>
+                
+                <div class="mb-8">
+                    <img src="维修保养现场照片.png" alt="维修保养现场照片" class="w-full rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 退磁现象原因分析 -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">磁盒使用后发生退磁现象的原因分析</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    随着国内建筑工业化的蓬勃发展，越来越多的PC构件工厂开始采用磁盒固定边模。但是很多构件工厂也反映，磁盒使用过一段时间后，会有明显的退磁现象，由于吸力不够，不能很好的固定模具，造成构件质量不达标，以至于很多客户开始怀疑磁盒的使用效果；同时磁盒损耗比较严重，与传统的螺丝固定以及人工成本相比不具优势，这也严重影响磁盒的应用前景。
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    基于笔者对与众多构件工厂的走访，结合我们对于磁性材料以及磁性组件的专业知识，对于磁盒使用后发生的退磁现象可能存在的原因，我们做了一些分析，同时提高磁盒质量，避免磁力衰减的生产工艺，以及磁盒使用的维护保养建议，供大家参考。
+                </p>
+                
+                <h3 class="text-2xl font-semibold mb-6 text-primary">使用温度</h3>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    磁盒一般都是采用烧结钕铁硼永磁材料制作，烧结钕铁硼材料应用广泛，从普通的吸力件，到永磁电机，套圈马达，高档音响喇叭，到手机震动马达等。根据不同应用情况，选择不同性能等级的钕铁硼材料。考虑工作温度方面，高性能钕铁硼材料最大工作温度能达到230度，最低性能材料的最大工作温度也有80度，如果我们PC构件生产，养护当中的温度低于80度，对于磁盒的磁性是没有任何影响的。如果有需要磁盒在80度或者以上温度条件下工作，就可以采用更高牌号的钕铁硼材料。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 修复前后对比 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">修复前后对比</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-light p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-center">修复前</h3>
+                    <img src="修复前.png" alt="修复前" class="w-full rounded-lg">
+                </div>
+                <div class="bg-light p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-center">修复后</h3>
+                    <img src="修复后.png" alt="修复后" class="w-full rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">山东博创新型建材科技有限公司</h3>
+                    <p class="text-gray-400">
+                        高品质磁性模板固定器专业制造商
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-all-300">首页</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-all-300">关于我们</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition-all-300">产品中心</a></li>
+                        <li><a href="support.html" class="text-gray-400 hover:text-white transition-all-300">技术支持</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-all-300">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">联系方式</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-phone mr-2"></i>
+                            <span class="text-gray-400">13869319129</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone-square mr-2"></i>
+                            <span class="text-gray-400">0533-7066068</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope mr-2"></i>
+                            <span class="text-gray-400">2088285851@qq.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">地址</h3>
+                    <p class="text-gray-400">
+                        山东省淄博市周村区萌水镇三衣工业园
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2026 山东博创新型建材科技有限公司. 保留所有权利.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
